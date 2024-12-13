@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyModel" Version="8.0.1" />
+		<PackageReference Include="Scrutor" Version="5.0.1" />
+		<PackageReference Include="Serilog" Version="4.2.0" />
+		
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+		
+		<PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="7.2.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\..\CryptoExchange.Infra.ExternalApi\CryptoExchange.Infra.ExternalApi.csproj" />
+	  <ProjectReference Include="..\..\1.Core\ApplicationService\CryptoExchange.Core.ApplicationService.csproj" />
+	  <ProjectReference Include="..\..\1.Core\Contracts\CryptoExchange.Core.Contracts.csproj" />
+	</ItemGroup>
+
+</Project>
